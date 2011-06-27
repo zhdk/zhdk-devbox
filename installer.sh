@@ -9,8 +9,8 @@ echo "Type=Link" >> ~/Desktop/pro_git.desktop
 echo "URL=http://progit.org/" >> ~/Desktop/pro_git.desktop
 echo "Icon=gnome-fs-bookmark" >> ~/Desktop/pro_git.desktop
 
-echo "Installing base packages"
-sudo apt-get install git-core ruby kate libxml2-dev libxslt-dev libc6-dev build-essential gcc
+echo "Installing base packages. This will take a long time and download ~500 MB of stuff."
+sudo apt-get install git-core ruby kate libxml2-dev libxslt-dev libc6-dev build-essential gcc libgraphicsmagick1-dev graphicsmagick-libmagick-dev-compat libmagickwand-dev
 
 echo "Getting and installing RubyGems system"
 cd /tmp
@@ -21,9 +21,7 @@ sudo ruby setup.rb install
 sudo ln -s /usr/bin/gem1.8 /usr/bin/gem
 sudo gem install bundler
 
-
-
-
+echo "-----"
 
 echo "System setup complete. See the various ZHdK projects' GitHub"
 echo "pages to find out how to clone and install them:"
