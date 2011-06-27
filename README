@@ -1,0 +1,51 @@
+== ZHdK Rails Development Box (on VirtualBox) ==
+
+This repository contains configuration files and setup information
+to set up a fresh virtual development environment for the ZHdK Rails
+projects:
+
+ http://github.com/psy-q/madek
+ http://github.com/psy-q/leihs
+
+The goal is to provide a few configuration files that you can use
+to set up a (virtual) Linux environment based on Linux Mint Debian Edition.
+
+This environment then allows you to run the Rails projects and start
+hacking on them without having to install all sorts of tools to your own
+workstation.
+
+Also, the projects work best and are easiest to install on Linux, so 
+this virtual Linux environment is useful for Mac OS X users.
+
+
+== Setup ==
+
+
+=== Using our pre-existing virtual hard disk images ===
+
+ 1. Download VirtualBox from virtualbox.org. If you're using
+    Linux, you can install this directly from your package manager
+    instead (e.g. apt-get install virtualbox-ose)
+
+ 2. Download our virtual disk image from www.psy-q.ch/zhdk/foo TODO!
+
+ 3. Create a new virtual machine in VirtualBox. Use the "Linux" -> "Debian"
+    type and give it at least 512 MB of memory. Do NOT create a new hard 
+    disk image. Use the one you downloaded at step 2 instead.
+
+ 4. You're ready to go! You actually don't need any of the files from
+    this repository because everything's already preinstalled in our
+    image :)
+
+=== Creating your own virtual Linux Mint installation ===
+
+foo
+
+== License ==
+
+These config files are distributed without any warranty.
+
+The environment itself comes as public domain.
+
+The included software (e.g. RubyGems installed to ~/.gem) each carry their 
+own licenses. Please observe the included licenses.
