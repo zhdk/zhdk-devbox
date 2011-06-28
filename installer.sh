@@ -32,6 +32,18 @@ if [ ! -f /usr/bin/gem ]; then
 	sudo gem install bundler
 fi
 
+if [ ! -f /usr/local/bin/node ]; then
+	echo "Getting and installing Node.js"
+	cd ~/Documents
+        rm -rf node
+	git clone https://github.com/joyent/node.git
+	cd node
+	./configure
+	make
+	sudo make install
+fi
+
+
 echo "-----"
 
 echo "System setup complete. See the various ZHdK projects' GitHub"
