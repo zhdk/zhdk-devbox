@@ -74,7 +74,7 @@ this virtual Linux environment is useful for Mac OS X users.
  7. Run the small install script from this directory:
  
     $ cd zhdk-devbox
-    $ sudo bash install.sh
+    $ bash install.sh
 
  8. After quite a long while of retrieving packages and installing
     stuff, you should have a complete development environment
