@@ -11,12 +11,12 @@ echo "Icon=gnome-fs-bookmark" >> ~/Desktop/pro_git.desktop
 
 
 
-echo "++ In the following dialog, you will be asked for a MySQL root password. ++"
+echo "++ In the following dialog, you might be asked for a MySQL root password. ++"
 echo "++ Please enter nothing as root password, just press enter.              ++"
 sleep 5
 
 echo "Installing base packages. This will take a long time and download ~500 MB of stuff."
-sudo apt-get install git-core ruby kate libxml2-dev libxslt-dev libc6-dev build-essential gcc libgraphicsmagick1-dev libmagickwand-dev libreadline-dev ffmpeg file mysql-client mysql-server mysql-client mysql-server libmysqlclient-dev
+sudo apt-get install git-core ruby kate libxml2-dev libxslt-dev libc6-dev build-essential gcc libgraphicsmagick1-dev libmagickwand-dev libreadline-dev ffmpeg file mysql-client mysql-server mysql-client mysql-server libmysqlclient-dev libssl-dev g++
 
 echo "Installing Exiftool via CPAN"
 sudo perl -MCPAN -e 'install Image::ExifTool'
