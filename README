@@ -75,6 +75,13 @@ this virtual Linux environment is useful for Mac OS X users.
     stuff, you should have a complete development environment
     capable of running, editing and comitting the ZHdK Rails projects.
 
+
+== Bookmarks ==
+
+The firefox_bookmarks.json file contains bookmarks pointing to all ZHdK Rails projects
+at GitHub for your convenience!
+
+
 == License ==
 
 These config files are distributed without any warranty.
