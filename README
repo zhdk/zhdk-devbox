@@ -27,11 +27,16 @@ this virtual Linux environment is useful for Mac OS X users.
     Linux, you can install this directly from your package manager
     instead (e.g. apt-get install virtualbox-ose)
 
- 2. Download our virtual disk image from www.psy-q.ch/zhdk/foo TODO!
+ 2. Download our virtual disk image and OVF file:
+    
+    http://www.psy-q.ch/stuff/zhdk-devbox/rails-dev-environment.ovf
+    http://www.psy-q.ch/stuff/zhdk-devbox/rails-dev-environment.vmdk
 
- 3. Create a new virtual machine in VirtualBox. Use the "Linux" -> "Debian"
-    type and give it at least 512 MB of memory. Do NOT create a new hard 
-    disk image. Use the one you downloaded at step 2 instead.
+    That's a total of about 3 GB.
+
+ 3. Start VirtualBox and select "Import Appliance..." from the pulldown
+    menu. Import the ovf file you downloaded in step 2, then start the 
+    resulting virtual machine.
 
  4. You're ready to go! You actually don't need any of the files from
     this repository because everything's already preinstalled in our
