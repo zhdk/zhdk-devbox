@@ -9,17 +9,28 @@ echo "Type=Link" >> ~/Desktop/pro_git.desktop
 echo "URL=http://progit.org/" >> ~/Desktop/pro_git.desktop
 echo "Icon=gnome-fs-bookmark" >> ~/Desktop/pro_git.desktop
 
-echo "Installing base packages. This will take a long time and download ~500 MB of stuff."
-sudo apt-get install git-core ruby kate libxml2-dev libxslt-dev libc6-dev build-essential gcc libgraphicsmagick1-dev graphicsmagick-libmagick-dev-compat libmagickwand-dev
 
-echo "Getting and installing RubyGems system"
-cd /tmp
-wget http://production.cf.rubygems.org/rubygems/rubygems-1.8.5.tgz
-tar xfz rubygems-1.8.5.tgz
-cd rubygems-1.8.5
-sudo ruby setup.rb install
-sudo ln -s /usr/bin/gem1.8 /usr/bin/gem
-sudo gem install bundler
+
+echo "++ In the following dialog, you will be asked for a MySQL root password. ++"
+echo "++ Please enter nothing as root password, just press enter.              ++"
+sleep 5
+
+echo "Installing base packages. This will take a long time and download ~500 MB of stuff."
+sudo apt-get install git-core ruby kate libxml2-dev libxslt-dev libc6-dev build-essential gcc libgraphicsmagick1-dev libmagickwand-dev libreadline-dev ffmpeg file mysql-client mysql-server mysql-client mysql-server libmysqlclient-dev
+
+echo "Installing Exiftool via CPAN"
+sudo perl -MCPAN -e 'install Image::ExifTool'
+
+if [ ! -f /usr/bin/gem ]; then
+	echo "Getting and installing RubyGems system"
+	cd /tmp
+	wget http://production.cf.rubygems.org/rubygems/rubygems-1.8.5.tgz
+	tar xfz rubygems-1.8.5.tgz
+	cd rubygems-1.8.5
+	sudo ruby setup.rb install
+	sudo ln -s /usr/bin/gem1.8 /usr/bin/gem
+	sudo gem install bundler
+fi
 
 echo "-----"
 
