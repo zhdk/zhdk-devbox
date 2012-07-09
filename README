@@ -4,8 +4,8 @@ This repository contains configuration files and setup information
 to set up a fresh virtual development environment for the ZHdK Rails
 projects:
 
- http://github.com/psy-q/madek
- http://github.com/psy-q/leihs
+ http://github.com/zhdk/madek
+ http://github.com/zhdk/leihs
 
 The goal is to provide a few configuration files that you can use
 to set up a (virtual) Linux environment based on Linux Mint Debian Edition.
