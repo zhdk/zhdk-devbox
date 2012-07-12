@@ -29,8 +29,8 @@ this virtual Linux environment is useful for Mac OS X users.
 
  2. Download our virtual disk image and OVF file:
     
-    http://www.psy-q.ch/stuff/zhdk-devbox/rails-dev-environment.ovf
-    http://www.psy-q.ch/stuff/zhdk-devbox/rails-dev-environment.vmdk
+    http://www.psy-q.ch/stuff/zhdk-devbox/zhdk-rails-dev-environment-2.0.ovf
+    http://www.psy-q.ch/stuff/zhdk-devbox/zhdk-rails-dev-environment-2.0.vmdk
 
     That's a total of about 3 GB.
 
@@ -42,43 +42,8 @@ this virtual Linux environment is useful for Mac OS X users.
     this repository because everything's already preinstalled in our
     image :)
 
- 5. Log in with username "zhdk", password "zhdk".
-
-=== Creating your own virtual Linux Mint installation ===
-
- 
- 1. Download VirtualBox from virtualbox.org. If you're using
-    Linux, you can install this directly from your package manager
-    instead (e.g. apt-get install virtualbox-ose)
-
- 2. Create a new virtual machine in VirtualBox. Use the "Linux" -> "Debian"
-    type and give it at least 512 MB of memory. Create a new hard disk
-    image and give about 10 GB of space.
-
- 3. Download Linux Mint Debian Edition from here, use the 32-bit
-    ISO from: http://www.linuxmint.com/download_lmde.php
-
- 4. Mount the ISO in the virtual machine. Boot from the ISO and choose
-    to install Linux Mint. Install the distribution according to your 
-    preferences.
-
- 5. When done, boot to your installed Linux Mint and install git:
-
-    $ sudo apt-get install git-core
- 
- 6. Clone this git repository e.g. onto your Desktop:
-
-    $ cd Desktop
-    $ git clone http://github.com/psy-q/zhdk-devbox.git
-
- 7. Run the small install script from this directory:
- 
-    $ cd zhdk-devbox
-    $ bash install.sh
-
- 8. After quite a long while of retrieving packages and installing
-    stuff, you should have a complete development environment
-    capable of running, editing and comitting the ZHdK Rails projects.
+ 5. Log in with username "user", password "user". The root password, if 
+    you need it, is "root".
 
 
 == Bookmarks ==
