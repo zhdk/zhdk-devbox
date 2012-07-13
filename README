@@ -30,7 +30,7 @@ this virtual Linux environment is useful for Mac OS X users.
  2. Download our virtual disk image and OVF file:
     
     http://www.psy-q.ch/stuff/zhdk-devbox/zhdk-rails-dev-environment-2.0.ovf
-    http://www.psy-q.ch/stuff/zhdk-devbox/zhdk-rails-dev-environment-2.0.vmdk
+    http://www.psy-q.ch/stuff/zhdk-devbox/zhdk-rails-dev-environment-2.0-disk1.vmdk
 
     That's a total of about 3 GB.
 
